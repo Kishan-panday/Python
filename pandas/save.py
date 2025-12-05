@@ -9,3 +9,8 @@ df = pd.DataFrame(data)
 print(df)
 df.to_csv("output.csv",index=False)
 df.to_csv("output.xlsx",index=False)
+
+
+df= pd.DataFrame(data)
+df.sort_values(by=['Age','City'], ascending=True, inplace=True)
+print(df)
